@@ -20,6 +20,9 @@ int main()
 
 
 #include<stdio.h>
+int sum(int a,int b);
+
+
 int main()
 {
 
@@ -39,10 +42,44 @@ int main()
  Armstrong number or not.
  (Search what is Armstrong number*/
 
-    int n;
-    printf("Enter the number:-\n");
-    scanf("%d",&n);
-    if(n%2!=0)
+    // int n,sum=0,m,n1;
+    // printf("Enter the number:-\n");
+    // scanf("%d",&n);
+    // n1=n;
+    // int i=0;
+    // while(n1%10!=0)
+    // {
+    //     m=n1%10;
+    //     sum=sum+(m*m*m);
+    //     n1=n1/10;
 
+    // }
+    // if(sum==n)
+    // {
+    //     printf("%d is a armstrong number",n);
+    // }
+    // else
+    // {
+    //     printf("%d is not a armstrong number",n);
+    // }
+
+    int a,b,s,m;
+    printf("Enter number a :\n");
+    scanf("%d",&a);
+    printf("Enter number b :\n");
+    scanf("%d",&b);
+    
+    s=sum(a,b);
+    m=sum(a,b);
+    printf("sum is %d",s);
+    printf("mul is %d",m);
     return 0;
+}
+int sum(int a,int b)
+{
+    int s=a+b;
+    int m=a*b;
+
+    return s;
+   
 }
